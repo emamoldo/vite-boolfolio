@@ -1,8 +1,13 @@
 header {
     min-height: 10vh;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 
 main {
-    min-height: 86vh;
+    min-height: 77.6vh;
 }
