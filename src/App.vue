@@ -55,7 +55,7 @@ export default {
 
 <template>
   <header class="bg-dark text-white py-3">
-    <div class="container py-2 d-flex justify-content-between ">
+    <div class="container py-2 d-flex justify-content-between">
       <div class="logo">
         <img src="./assets/img/Logo.png" alt="">
       </div>
@@ -93,11 +93,21 @@ export default {
   </main>
 
   <footer class="py-5 bg-dark text-white">
-    <section class="container">
-      <i class="fa-regular fa-copyright"></i>
-      <a class="text-decoration-none" href="linkedin link here">Emanuel Moldovan</a> |
-      <a class="text-decoration-none" href="https://github.com/emamoldo">Check my GitHub <i
-          class="fa-brands fa-github"></i></a> |
+    <section class="container d-flex justify-content-between">
+      <section class="">
+        <i class="fa-regular fa-copyright"></i>
+        <a class="text-decoration-none" href="linkedin link here">Emanuel Moldovan</a> |
+        <a class="text-decoration-none" href="https://github.com/emamoldo">Check my GitHub <i
+            class="fa-brands fa-github"></i></a> |
+      </section>
+      <div class="d-flex gap-2">
+        <a href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     </section>
   </footer>
 

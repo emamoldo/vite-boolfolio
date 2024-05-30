@@ -6,7 +6,12 @@ header {
     }
 }
 
-
 main {
     min-height: 77.4vh;
+}
+
+footer {
+    a {
+        color: white;
+    }
 }
