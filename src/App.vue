@@ -54,10 +54,10 @@ export default {
 </script>
 
 <template>
-  <header>
-    <div class="container py-2 d-flex justify-content-between">
+  <header class="bg-dark text-white py-3">
+    <div class="container py-2 d-flex justify-content-between ">
       <div class="logo">
-        Logo
+        <img src="./assets/img/Logo.png" alt="">
       </div>
       <div class="right d-flex gap-3">
         <a href="/home">Home</a>
@@ -70,7 +70,7 @@ export default {
 
   <main>
 
-    <div class="container text-center">
+    <div class="container text-center py-5">
       <div class="row row-cols-2 row-cols-lg-6 d-flex gap-3">
         <div class="card py-2" v-for="project in projects">
 

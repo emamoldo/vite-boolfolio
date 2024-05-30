@@ -3,11 +3,10 @@ header {
 
     a {
         text-decoration: none;
-        color: black;
     }
 }
 
 
 main {
-    min-height: 77.6vh;
+    min-height: 77.4vh;
 }
