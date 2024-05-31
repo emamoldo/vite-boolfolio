@@ -57,7 +57,8 @@ export default {
 
 <template>
 
-    <AppBanner title="BoolFolio Blog" leadText="Read our blogs" callToAction="More About Us" callToActionUrl="about">
+    <AppBanner class="py-5" title="BoolFolio Blog" leadText="Look for our Projects" callToAction="More About Us"
+        callToActionUrl="about">
     </AppBanner>
 
     <div class="container text-center py-5">

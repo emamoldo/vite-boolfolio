@@ -3,7 +3,7 @@
 import AppBanner from '../components/AppBanner.vue';
 export default {
     name: 'AppAbout',
-    componets: {
+    components: {
         AppBanner
     }
 }
