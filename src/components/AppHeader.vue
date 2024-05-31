@@ -30,7 +30,7 @@ export default {
 <template>
 
     <header class="bg-dark text-white py-3">
-        <div class="container py-2 d-flex justify-content-between">
+        <div class="container py-2 d-flex justify-content-between align-items-center">
             <div class="logo">
                 <img src="../assets/img/Logo.png" alt="">
             </div>

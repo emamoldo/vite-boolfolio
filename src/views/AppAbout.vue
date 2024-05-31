@@ -11,7 +11,7 @@ export default {
 
 <template>
 
-    <AppBanner title="About Me" leadText="I'm a Junior Web Developer" callToAction="Look for my Projects"
+    <AppBanner class="py-5" title="About Me" leadText="I'm a Junior Web Developer" callToAction="Look for my Projects"
         callToActionUrl="blog"></AppBanner>
     <div class="py-5">
         <div class="container">

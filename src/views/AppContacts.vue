@@ -1,12 +1,35 @@
 <script>
+import AppBanner from '../components/AppBanner.vue'
 export default {
-    name: 'AppContacts'
+    name: 'AppContacts',
+    components: {
+        AppBanner
+    }
 }
 </script>
 
+
+
 <template>
 
-    <h1>Contacts Page</h1>
+    <AppBanner class="py-5" title="Contact Us" leadText="Contact Us" callToAction="Home" callToActionUrl="home">
+    </AppBanner>
+
+    <div class="container">
+        <div class="py-3">
+            <label for="first-name" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="first-name" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="FormControlInput" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="FormControlInput" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="FormControlTextare1" class="form-label">Textarea</label>
+            <textarea class="form-control" id="FormControlTextarea" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send!</button>
+    </div>
 
 
 </template>
