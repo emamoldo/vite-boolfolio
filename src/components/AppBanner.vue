@@ -16,7 +16,7 @@ export default {
         <div class="container">
             <h2>{{ title }}</h2>
             <p>{{ leadText }}</p>
-            <router-link class="btn btn-primary" :to="{ name: callToActionUrl }">{{ callToAction }}</router-link>
+            <router-link class="btn" :to="{ name: callToActionUrl }">{{ callToAction }}</router-link>
         </div>
     </div>
 

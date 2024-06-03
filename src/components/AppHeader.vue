@@ -29,10 +29,10 @@ export default {
 
 <template>
 
-    <header class="bg-dark text-white py-3">
+    <header class="header py-3">
         <div class="container py-2 d-flex justify-content-between align-items-center">
             <div class="logo">
-                <img src="../assets/img/Logo.png" alt="">
+                <img class="logo" src="../assets/img/logo1.png" alt="">
             </div>
             <div class="right d-flex gap-3">
                 <router-link :to="{ name: item.route }" v-for="item in menu">{{ item.text }}</router-link>
@@ -42,4 +42,13 @@ export default {
 
 </template>
 
-<style></style>
+<style>
+.header {
+    background-color: #947EB0;
+
+    .logo {
+        width: 125px;
+        height: 100px;
+    }
+}
+</style>
