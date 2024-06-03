@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<template>
+<template class="main">
     <AppBanner class="py-5" title="Home" leadText="I'm a Junior Web Developer" callToAction="Look for my Projects"
         callToActionUrl="blog">
     </AppBanner>
@@ -47,12 +47,10 @@ export default {
                                 <img :src="project.cover_image" class="card-img-top" alt="">
                             </template>
                         </router-link>
+                        <div class="card-body">
+                            <h3 class="card-title py-5">{{ project.title }}</h3>
+                        </div>
                     </div>
-
-                    <div class="card-body">
-                        <h3 class="card-title">{{ project.title }}</h3>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -61,8 +59,13 @@ export default {
 </template>
 
 <style>
+main {
+    background-color: #766C7F;
+    color: white;
+}
+
 .cards {
     height: 400px;
-    width: 400px;
+    border: 1px solid black;
 }
 </style>

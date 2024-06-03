@@ -23,8 +23,6 @@ export default {
   <footer>
     <AppFooter />
   </footer>
-
-
 </template>
 
 <style></style>

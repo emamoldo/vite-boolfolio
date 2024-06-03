@@ -32,7 +32,9 @@ export default {
     <header class="header py-3">
         <div class="container py-2 d-flex justify-content-between align-items-center">
             <div class="logo">
-                <img class="logo" src="../assets/img/logo1.png" alt="">
+                <a href="">
+                    <img class="logo" src="../assets/img/logo1.png" alt="">
+                </a>
             </div>
             <div class="right d-flex gap-3">
                 <router-link :to="{ name: item.route }" v-for="item in menu">{{ item.text }}</router-link>
@@ -47,8 +49,8 @@ export default {
     background-color: #947EB0;
 
     .logo {
-        width: 125px;
-        height: 100px;
+        width: 100px;
+        height: 75px;
     }
 }
 </style>

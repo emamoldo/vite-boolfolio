@@ -16,10 +16,14 @@ export default {
         <div class="container">
             <h2>{{ title }}</h2>
             <p>{{ leadText }}</p>
-            <router-link class="btn" :to="{ name: callToActionUrl }">{{ callToAction }}</router-link>
+            <router-link class="btn button" :to="{ name: callToActionUrl }">{{ callToAction }}</router-link>
         </div>
     </div>
 
 </template>
 
-<style></style>
+<style>
+.button {
+    background-color: #9FA2BD;
+}
+</style>

@@ -89,6 +89,7 @@ export default {
 .cards {
     height: 400px;
     width: 300px;
+    color: black;
 }
 
 .cover_image {
