@@ -21,9 +21,11 @@ export default {
                 if (response.data.success) {
                     this.project = response.data.response
                     console.log(this.project);
+                } else {
+                    this.$router.push({ name: 'not-found' })
                 }
             }).catch(err => {
-
+                console.error(err)
             })
     }
 }
