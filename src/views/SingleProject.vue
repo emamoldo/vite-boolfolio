@@ -8,13 +8,14 @@ export default {
     },
     data() {
         return {
-            project: '',
             base_api_url: 'http://127.0.0.1:8000',
             base_projects_url: '/api/projects',
+            project: 'null',
         }
     },
     mounted() {
         const url = this.base_api_url + this.base_projects_url + `/${this.$route.params.id}`
+        console.log(url);
         axios
             .get(url)
             .then(response => {
@@ -42,15 +43,27 @@ export default {
     <div class="container py-3">
         <div class="sections">
             <div class="left">
-                <router-link :to="{ name: 'singleProject', params: { id: project.id } }">
-                    <template v-if="project.cover_image">
-                        <img :src="base_api_url + '/storage/' + project.cover_image" class="cover_image card-img-top"
-                            alt="">
-                    </template>
-                    <template v-else>
-                        <img :src="project.cover_image" class="cover_image card-img-top" alt="">
-                    </template>
-                </router-link>
+
+                <!--
+                    <router-link :to="{ name: 'singleProject', params: { id: project.id } }">
+                        <template v-if="project.cover_image">
+                            <img :src="base_api_url + '/storage/' + project.cover_image" class="cover_image card-img-top"
+                                alt="">
+                        </template>
+<template v-else>
+                            <img :src="project.cover_image" class="cover_image card-img-top" alt="">
+                        </template>
+</router-link>
+-->
+
+                <template v-if="project.cover_image">
+                    <img :src="base_api_url + '/storage/' + project.cover_image" class="cover_image card-img-top"
+                        alt="">
+                </template>
+                <template v-else>
+                    <img :src="project.cover_image" class="cover_image card-img-top" alt="">
+                </template>
+
             </div>
 
             <div class="right">
